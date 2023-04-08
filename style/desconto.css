@@ -1,0 +1,87 @@
+.descontos {
+  margin: 20px auto;
+  padding: 30px 0;
+  max-width: 1200px;
+}
+
+.descontos h2 {
+  text-align: center;
+}
+
+.descontos-flex {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+}
+
+.descontos-flex div {
+  margin: 0 16px;
+  max-width: 105px;
+}
+.descontos-flex img {
+  padding: 12px;
+}
+
+.descontos-flex p {
+  font-size: 0.7rem;
+  line-height: 1.2;
+  text-align: center;
+  color: #4a4a4a;
+  padding-top: 0.5rem;
+}
+
+.descontos-prev,
+.descontos-next {
+  position: absolute;
+  background-color: #fff;
+  cursor: pointer;
+  width: 40px;
+  height: 64px;
+  z-index: 2;
+  border: none;
+}
+
+.descontos-prev {
+  left: 0;
+}
+
+.descontos-next {
+  right: 0;
+}
+
+.descontos-prev::before,
+.descontos-prev::after,
+.descontos-next::before,
+.descontos-next::after {
+  background: #666;
+  content: '';
+  display: block;
+  height: 1px;
+  position: absolute;
+  width: 16px;
+}
+
+.descontos-prev::before {
+  right: 30%;
+  rotate: -45deg;
+  top: 22px;
+}
+
+.descontos-prev::after {
+  right: 30%;
+  rotate: 45deg;
+  top: 33px;
+}
+
+.descontos-next::before {
+  right: 30%;
+  top: 22px;
+  rotate: 45deg;
+}
+
+.descontos-next::after {
+  right: 30%;
+  top: 33px;
+  rotate: -45deg;
+}

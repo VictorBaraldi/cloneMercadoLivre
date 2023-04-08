@@ -1,0 +1,79 @@
+.glider-container {
+  position: relative;
+  cursor: pointer;
+}
+
+.glider-container button {
+  opacity: 0;
+}
+
+.glider-container:hover button {
+  opacity: 1;
+}
+
+.glider-container button:hover {
+  box-shadow: 2px 4px 12px 1px rgba(0, 0, 0, 0.19);
+}
+
+.glider-contain {
+  max-width: 1600px;
+  position: relative;
+}
+
+.glider-prev,
+.glider-next {
+  position: absolute;
+  background-color: #fff;
+  cursor: pointer;
+  width: 40px;
+  height: 64px;
+  z-index: 2;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.19);
+  top: 38%;
+}
+
+.glider-prev {
+  left: 0px;
+  border-radius: 0 5px 5px 0;
+}
+
+.glider-next {
+  right: 0px;
+  border-radius: 5px 0 0 5px;
+}
+
+.glider-prev::before,
+.glider-prev::after,
+.glider-next::before,
+.glider-next::after {
+  background: #3483fa;
+  content: '';
+  display: block;
+  height: 2px;
+  position: absolute;
+  width: 14px;
+}
+
+.glider-prev::before {
+  right: 30%;
+  rotate: -45deg;
+  top: 26px;
+}
+
+.glider-prev::after {
+  right: 30%;
+  rotate: 45deg;
+  top: 36px;
+}
+
+.glider-next::before {
+  right: 30%;
+  top: 26px;
+  rotate: 45deg;
+}
+
+.glider-next::after {
+  right: 30%;
+  top: 36px;
+  rotate: -45deg;
+}
