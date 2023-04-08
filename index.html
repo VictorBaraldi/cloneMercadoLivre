@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="./style/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 
 </head>
 
@@ -19,7 +19,9 @@
   <header class="nav-header">
     <nav class="nav-grid container">
       <div class="flex-item">
-        <a href="" class="nav-logo"><img src="assets/icons/logo.png" alt=""></a>
+        <a href="" class="nav-logo">
+          <div></div>
+        </a>
       </div>
       <form>
         <input type="text" class="nav-input-search" placeholder="Buscar produtos, marcas e muito mais...">
@@ -28,7 +30,7 @@
         </button>
       </form>
       <div class="flex-item nav-header-disney">
-        <a href=""><img class="nav-disney" src="assets/images/disneyHeader.webp" alt=""></a>
+
       </div>
       <div class="flex-item nav-itens">
         <img src="assets/icons/local.svg" alt="">
@@ -70,49 +72,50 @@
       <button class="glider-prev"></button>
       <button class="glider-next"></button>
     </div>
+
     <article class="descontos">
       <h2 class="title">ARRASTE PRO LADO E APROVEITE AO MÁXIMO O DESCONTAÇO! 💛</h2>
       <div class="descontos-flex">
         <button class="descontos-prev"></button>
         <div>
           <a href="">
-            <img src="./assets/descontaco/desc1.webp" alt="">
+            <img src="./assets/categorias/slide1/img1.webp" alt="">
           </a>
           <p>ATÉ 70% OFF</p>
         </div>
         <div> <a href="">
-            <img src="./assets/descontaco/desc2.webp" alt="">
+            <img src="./assets/categorias/slide1/img2.webp" alt="">
           </a>
           <p>DESCONTO COM PIX</p>
         </div>
         <div> <a href="">
-            <img src="./assets/descontaco/desc3.webp" alt="">
+            <img src="./assets/categorias/slide1/img3.webp" alt="">
           </a>
           <p>CUPOM DE DESCONTO</p>
         </div>
         <div> <a href="">
-            <img src="./assets/descontaco/desc4.webp" alt="">
+            <img src="./assets/categorias/slide1/img4.webp" alt="">
           </a>
           <p>ACHADOS ATÉ R$100</p>
         </div>
         <div> <a href="">
-            <img src="./assets/descontaco/desc5.webp" alt="">
+            <img src="./assets/categorias/slide1/img5.webp" alt="">
           </a>
           <p>MÍNIMO 50% OFF</p>
         </div>
         <div> <a href="">
-            <img src="./assets/descontaco/desc6.webp" alt="">
+            <img src="./assets/categorias/slide1/img6.webp" alt="">
           </a>
           <p>OS MAIS BUSCADOS</p>
         </div>
         <div> <a href="">
-            <img src="./assets/descontaco/desc7.webp" alt="">
+            <img src="./assets/categorias/slide1/img7.webp" alt="">
           </a>
           <p>OFERTA COM FRETE GRÁTIS</p>
         </div>
         <div>
           <a href="">
-            <img src="./assets/descontaco/desc8.webp" alt="">
+            <img src="./assets/categorias/slide1/img8.webp" alt="">
           </a>
           <p>EXCLUSIVO MERCADO LIVRE</p>
         </div>
@@ -124,15 +127,15 @@
       <h2 class="title">PRA COMPRAR AGORA 🟡</h2>
       <div class="comprar-grid">
         <div>
-          <a href=""><img src="assets/products/notebook1.webp" alt=""></a>
+          <a href=""><img src="assets/products/slide1/notebook1.webp" alt=""></a>
           <div class="comprar-itens">
-            <span class="comprar-old">R$ 4.199</span>
-            <div>
-              <span>R$ 2.981</span>
-              <sup>29<!-- -->% OFF </sup>
+            <span class="comprar-oldPrice">R$ 4.199</span>
+            <div class="flex-item">
+              <span class="comprar-price">R$ 2.981</span>
+              <sup class="comprar-desconto">29<!-- -->% OFF </sup>
             </div>
-            <span>10x R$ 298 <sup>13</sup> sem juros</span>
-            <div>
+            <span class="comprar-parcela">10x R$ 298 <sup>13</sup> sem juros</span>
+            <div class="comprar-frete flex-item">
               <span>Frete grátis</span>
               <img src="assets/icons/raio.svg" alt="">
             </div>
@@ -140,14 +143,14 @@
           </div>
         </div>
         <div>
-          <a href=""><img src="assets/products/camera.webp" alt=""></a>
+          <a href=""><img src="assets/products/slide1/camera.webp" alt=""></a>
           <div class="comprar-itens">
-            <span class="comprar-old">R$ 276</span>
-            <div>
-              <span>R$ 199 <sup>26</sup></span>
-              <sup>28<!-- -->% OFF </sup>
+            <span class="comprar-oldPrice">R$ 276</span>
+            <div class="flex-item">
+              <span class="comprar-price">R$ 199<sup>26</sup></span>
+              <sup class="comprar-desconto">28<!-- -->% OFF </sup>
             </div>
-            <div>
+            <div class="comprar-frete flex-item">
               <span>Frete grátis</span>
               <img src="assets/icons/raio.svg" alt="">
             </div>
@@ -155,12 +158,12 @@
           </div>
         </div>
         <div>
-          <a href=""><img src="assets/products/creatina.webp" alt=""></a>
+          <a href=""><img src="assets/products/slide1/creatina.webp" alt=""></a>
           <div class="comprar-itens">
-            <span class="comprar-old">R$ 77</span>
-            <div>
-              <span>R$ 62 <sup>39</sup></span>
-              <sup>20<!-- -->% OFF </sup>
+            <span class="comprar-oldPrice">R$ 77</span>
+            <div class="flex-item">
+              <span class="comprar-price">R$ 62<sup>39</sup></span>
+              <sup class="comprar-desconto">20<!-- -->% OFF </sup>
             </div>
             <div>
               <img src="assets/icons/raio.svg" alt="">
@@ -169,14 +172,14 @@
           </div>
         </div>
         <div>
-          <a href=""><img src="assets/products/cueca.webp" alt=""></a>
+          <a href=""><img src="assets/products/slide1/cueca.webp" alt=""></a>
           <div class="comprar-itens">
-            <span class="comprar-old">R$ 199</span>
+            <span class="comprar-oldPrice">R$ 199</span>
             <div>
-              <span>R$ 129 <sup>90</sup></span>
-              <sup>35<!-- -->% OFF </sup>
+              <span class="comprar-price">R$ 129<sup>90</sup></span>
+              <sup class="comprar-desconto">35<!-- -->% OFF </sup>
             </div>
-            <div>
+            <div class="comprar-frete flex-item">
               <span>Frete grátis</span>
               <img src="assets/icons/raio.svg" alt="">
             </div>
@@ -184,15 +187,15 @@
           </div>
         </div>
         <div>
-          <a href=""><img src="assets/products/notebook2.webp" alt=""></a>
+          <a href=""><img src="assets/products/slide1/notebook2.webp" alt=""></a>
           <div class="comprar-itens">
-            <span class="comprar-old">R$ 2.699</span>
+            <span class="comprar-oldPrice">R$ 2.699</span>
             <div>
-              <span>R$ 2.489</span>
-              <sup>7<!-- -->% OFF </sup>
+              <span class="comprar-price">R$ 2.489</span>
+              <sup class="comprar-desconto">7<!-- -->% OFF </sup>
             </div>
-            <span>10x R$ 248 <sup>90</sup> sem juros</span>
-            <div>
+            <span class="comprar-parcela">10x R$ 248 <sup>90</sup> sem juros</span>
+            <div class="comprar-frete flex-item">
               <span>Frete grátis</span>
               <img src="assets/icons/raio.svg" alt="">
             </div>
@@ -203,8 +206,342 @@
     </article>
 
     <div class="container">
+      <img src="assets/images/bannerSamsung.jpg" alt="">
       <img src="assets/images/bannerBigBrother.webp" alt="">
     </div>
+
+    <article class="descontos">
+      <h2 class="title">ARRASTE PRO LADO E CONFIRA VÁRIAS OFERTAS</h2>
+      <div class="descontos-flex">
+        <button class="descontos-prev"></button>
+        <div>
+          <a href="">
+            <img src="./assets/categorias/slide2/img1.webp" alt="">
+          </a>
+          <p>MODA E ACESSÓRIOS</p>
+        </div>
+        <div> <a href="">
+            <img src="./assets/categorias/slide2/img2.webp" alt="">
+          </a>
+          <p>cASA E DECOR</p>
+        </div>
+        <div> <a href="">
+            <img src="./assets/categorias/slide2/img3.webp" alt="">
+          </a>
+          <p>CELULARES</p>
+        </div>
+        <div> <a href="">
+            <img src="./assets/categorias/slide2/img4.webp" alt="">
+          </a>
+          <p>ELETRODOMÉSTICOS</p>
+        </div>
+        <div> <a href="">
+            <img src="./assets/categorias/slide2/img5.webp" alt="">
+          </a>
+          <p>TELEVISORES</p>
+        </div>
+        <div> <a href="">
+            <img src="./assets/categorias/slide2/img6.webp" alt="">
+          </a>
+          <p>INFORMÁTICA</p>
+        </div>
+        <div> <a href="">
+            <img src="./assets/categorias/slide2/img7.webp" alt="">
+          </a>
+          <p>FERRAMENTAS E CONSTRUÇÃO</p>
+        </div>
+        <div>
+          <a href="">
+            <img src="./assets/categorias/slide2/img8.webp" alt="">
+          </a>
+          <p>ELETRÔNICOS</p>
+        </div>
+        <button class="descontos-next"></button>
+      </div>
+    </article>
+
+    <article class="comprar-menu container">
+      <h2 class="title">PRA COMPRAR AGORA 🟡</h2>
+      <div class="comprar-grid">
+        <div>
+          <a href=""><img src="assets/products/slide2/celular.webp" alt=""></a>
+          <div class="comprar-itens">
+            <span class="comprar-oldPrice">R$ 1.415</span>
+            <div class="flex-item">
+              <span class="comprar-price">R$ 789</span>
+              <sup class="comprar-desconto">44<!-- -->% OFF </sup>
+            </div>
+            <span class="comprar-parcela">10x R$ 78 <sup>90</sup> sem juros</span>
+            <div class="comprar-frete flex-item">
+              <span>Frete grátis</span>
+              <img src="assets/icons/raio.svg" alt="">
+            </div>
+            <h3>Samsung Galaxy A03s Dual SIM 64 GB preto 4 GB RAM</h3>
+          </div>
+        </div>
+        <div>
+          <a href=""><img src="assets/products/slide1/cueca.webp" alt=""></a>
+          <div class="comprar-itens">
+            <span class="comprar-oldPrice">R$ 199</span>
+            <div>
+              <span class="comprar-price">R$ 129<sup>90</sup></span>
+              <sup class="comprar-desconto">35<!-- -->% OFF </sup>
+            </div>
+            <div class="comprar-frete flex-item">
+              <span>Frete grátis</span>
+              <img src="assets/icons/raio.svg" alt="">
+            </div>
+            <h3>Kit 12 Cuecas Masculinas Boxer Microfibra Polo Wear</h3>
+          </div>
+        </div>
+        <div>
+          <a href=""><img src="assets/products/slide2/ar.webp" alt=""></a>
+          <div class="comprar-itens">
+            <span class="comprar-oldPrice">R$ 2649</span>
+            <div class="flex-item">
+              <span class="comprar-price">R$ 1.979</span>
+              <sup class="comprar-desconto">25<!-- -->% OFF </sup>
+            </div>
+            <span class="comprar-parcela">10x R$ 197 <sup>90</sup> sem juros</span>
+            <h3>Ar condicionado Springer Midea Xtreme Save split inverter frio 12000 BTU branco 220V 42AGVCB12M5|38AGVCB12M5</h3>
+          </div>
+        </div>
+        <div>
+          <a href=""><img src="assets/products/slide2/fogao.webp" alt=""></a>
+          <div class="comprar-itens">
+            <span class="comprar-oldPrice">R$ 847</span>
+            <div>
+              <span class="comprar-price">R$ 599</span>
+              <sup class="comprar-desconto">29<!-- -->% OFF </sup>
+            </div>
+            <span class="comprar-parcela">10x R$ 59 <sup>90</sup> sem juros</span>
+            <h3>Fogão de pé Itatiaia Star 4Q gás engarrafado 4 queimadores branco 127V/220V porta com visor 51L</h3>
+          </div>
+        </div>
+        <div>
+          <a href=""><img src="assets/products/slide2/micro.webp" alt=""></a>
+          <div class="comprar-itens">
+            <span class="comprar-oldPrice">R$ 678</span>
+            <div>
+              <span class="comprar-price">R$ 599</span>
+              <sup class="comprar-desconto">11<!-- -->% OFF </sup>
+            </div>
+            <span class="comprar-parcela">10x R$ 248 <sup>90</sup> sem juros</span>
+            <div class="comprar-frete flex-item">
+              <span>Frete grátis</span>
+            </div>
+            <h3>Micro-ondas Electrolux MTO30 branco 20L 127V</h3>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <div class="container">
+      <h2 class="title">VAI TER CUPOM NO DESCONTAÇO, SIM! 😱</h2>
+      <img src="assets/images/bannerNike.webp" alt="">
+    </div>
+
+    <article class="descontos">
+      <h2 class="title">MAIS OFERTAS PRA APROVEITAR</h2>
+      <div class="descontos-flex">
+        <button class="descontos-prev"></button>
+        <div>
+          <a href="">
+            <img src="./assets/categorias/slide3/img1.webp" alt="">
+          </a>
+          <p>SUPLEMENTOS</p>
+        </div>
+        <div> <a href="">
+            <img src="./assets/categorias/slide3/img2.webp" alt="">
+          </a>
+          <p>PRODUTOS INTERNACIONAIS</p>
+        </div>
+        <div> <a href="">
+            <img src="./assets/categorias/slide3/img3.webp" alt="">
+          </a>
+          <p>GAMES</p>
+        </div>
+        <div> <a href="">
+            <img src="./assets/categorias/slide3/img4.webp" alt="">
+          </a>
+          <p>BRINQUEDOS</p>
+        </div>
+        <div> <a href="">
+            <img src="./assets/categorias/slide3/img5.webp" alt="">
+          </a>
+          <p>SAÚDE</p>
+        </div>
+        <div> <a href="">
+            <img src="./assets/categorias/slide3/img6.webp" alt="">
+          </a>
+          <p>BEBÊS</p>
+        </div>
+        <div> <a href="">
+            <img src="./assets/categorias/slide3/img7.webp" alt="">
+          </a>
+          <p>SUPERMERCADO</p>
+        </div>
+        <div>
+          <a href="">
+            <img src="./assets/categorias/slide3/img8.webp" alt="">
+          </a>
+          <p>INSTRUMENTOS MUSICAIS</p>
+        </div>
+        <button class="descontos-next"></button>
+      </div>
+    </article>
+
+    <div class="container">
+      <h2 class="title">APROVEITE A PÁSCOA COM O DESCONTAÇO 🐰</h2>
+      <div class="pascoa-grid">
+        <img src="assets/images/pascoa1.webp" alt="">
+        <img src="assets/images/pascoa2.webp" alt="">
+        <img src="assets/images/pascoa3.webp" alt="">
+        <img src="assets/images/pascoa4.webp" alt="">
+      </div>
+    </div>
+
+    <article class="comprar-menu container">
+      <h2 class="title">POR TEMPO LIMITADO 💣</h2>
+      <div class="comprar-grid">
+        <div>
+          <a href=""><img src="assets/products/slide1/cueca.webp" alt=""></a>
+          <div class="comprar-itens">
+            <span class="comprar-oldPrice">R$ 199</span>
+            <div>
+              <span class="comprar-price">R$ 129<sup>90</sup></span>
+              <sup class="comprar-desconto">35<!-- -->% OFF </sup>
+            </div>
+            <div class="comprar-frete flex-item">
+              <span>Frete grátis</span>
+              <img src="assets/icons/raio.svg" alt="">
+            </div>
+            <h3>Kit 12 Cuecas Masculinas Boxer Microfibra Polo Wear</h3>
+          </div>
+        </div>
+        <div>
+          <a href=""><img src="assets/products/slide3/ar.webp" alt=""></a>
+          <div class="comprar-itens">
+            <span class="comprar-oldPrice">R$ 69</span>
+            <div>
+              <span class="comprar-price">R$ 66<sup>40</sup></span>
+              <sup class="comprar-desconto">5<!-- -->% OFF </sup>
+            </div>
+            <h3>Ar Condicionado Pequeno Portátil P Carro/caminhão Etc</h3>
+          </div>
+        </div>
+        <div>
+          <a href=""><img src="assets/products/slide3/ventilador.webp" alt=""></a>
+          <div class="comprar-itens">
+            <span class="comprar-oldPrice">R$ 144</span>
+            <div class="flex-item">
+              <span class="comprar-price">R$ 131<sup>04</sup></span>
+              <sup class="comprar-desconto">9<!-- -->% OFF </sup>
+            </div>
+            <div class="comprar-frete flex-item">
+              <span>Frete grátis</span>
+              <img src="assets/icons/raio.svg" alt="">
+            </div>
+            <h3>Ventilador C/ Retrátil Coluna Barato Forte Silencioso Dormir</h3>
+          </div>
+        </div>
+        <div>
+          <a href=""><img src="assets/products/slide3/cueca.webp" alt=""></a>
+          <div class="comprar-itens">
+            <span class="comprar-oldPrice">R$ 199</span>
+            <div>
+              <span class="comprar-price">R$ 159 <sup>90</sup></span>
+              <sup class="comprar-desconto">20<!-- -->% OFF </sup>
+            </div>
+            <div class="comprar-frete flex-item">
+              <span>Frete grátis</span>
+              <img src="assets/icons/raio.svg" alt="">
+            </div>
+            <h3> Kit Com 10 Cuecas Masculina Boxer De Algodão Mash</h3>
+          </div>
+        </div>
+        <div>
+          <a href=""><img src="assets/products/slide3/tenis.webp" alt=""></a>
+          <div class="comprar-itens">
+            <span class="comprar-oldPrice">R$ 199</span>
+            <div>
+              <span class="comprar-price">R$ 128 <sup>99</sup></span>
+              <sup class="comprar-desconto">35<!-- -->% OFF </sup>
+            </div>
+            <div class="comprar-frete flex-item">
+              <span>Frete grátis</span>
+            </div>
+            <h3>Tênis Masculino Esportivo Urbex Olympikus </h3>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <div class="container">
+      <h2 class="title">OS MELHORES BENEFÍCIOS COM NÍVEL 6 DO MERCADO LIVRE ✨</h2>
+      <img src="assets/images/bannerNivel6.webp" alt="">
+    </div>
+
+    <article class="descontos">
+      <h2 class="title">AS MARCAS FAVORITAS PRA VOCÊ COMPRAR 🤩</h2>
+      <div class="descontos-flex">
+        <button class="descontos-prev"></button>
+        <div>
+          <a href="">
+            <img src="./assets/categorias/slide4/img1.webp" alt="">
+          </a>
+          <p>LACTA</p>
+        </div>
+        <div> <a href="">
+            <img src="./assets/categorias/slide4/img2.webp" alt="">
+          </a>
+          <p>NIKE</p>
+        </div>
+        <div> <a href="">
+            <img src="./assets/categorias/slide4/img3.webp" alt="">
+          </a>
+          <p>APPLE</p>
+        </div>
+        <div> <a href="">
+            <img src="./assets/categorias/slide4/img4.webp" alt="">
+          </a>
+          <p>ADIDAS</p>
+        </div>
+        <div> <a href="">
+            <img src="./assets/categorias/slide4/img5.webp" alt="">
+          </a>
+          <p>SAMSUNG</p>
+        </div>
+        <div> <a href="">
+            <img src="./assets/categorias/slide4/img6.webp" alt="">
+          </a>
+          <p>O'BOTICÁRIO</p>
+        </div>
+        <div> <a href="">
+            <img src="./assets/categorias/slide4/img7.webp" alt="">
+          </a>
+          <p>HERING</p>
+        </div>
+        <div>
+          <a href="">
+            <img src="./assets/categorias/slide4/img8.webp" alt="">
+          </a>
+          <p>MOTOROLA</p>
+        </div>
+        <button class="descontos-next"></button>
+      </div>
+    </article>
+
+    <div class="container">
+      <h2 class="title">NO DESCONTAÇO DO MERCADO LIVRE VOCÊ APROVEITA MUITO!</h2>
+      <div class="desconto-grid">
+        <img src="./assets/images/desconto1.webp" alt="">
+        <img src="./assets/images/desconto2.webp" alt="">
+        <img src="./assets/images/desconto3.webp" alt="">
+      </div>
+    </div>
+
+
 
   </main>
 

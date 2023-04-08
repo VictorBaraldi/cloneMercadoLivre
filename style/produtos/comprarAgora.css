@@ -9,8 +9,8 @@
 
 .comprar-grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 1rem;
+  grid-template-columns: repeat(5, minmax(160px, 224px));
+  gap: 0.6rem;
 }
 
 .comprar-flex {
@@ -23,6 +23,7 @@
   border-right: 1px solid #eee;
   border-bottom: 1px solid #eee;
   border-radius: 10px;
+  padding-bottom: 14px;
 }
 
 .comprar-grid > div:hover {
@@ -32,4 +33,67 @@
 .comprar-itens {
   padding: 14px 14px 10px 14px;
   border-top: 1px solid #eee;
+}
+
+.comprar-oldPrice {
+  font-size: 10px;
+  text-decoration: line-through;
+  color: #666;
+  height: 15px;
+}
+
+.comprar-oldPrice > div {
+  position: relative;
+}
+
+.comprar-price {
+  font-size: 23px;
+}
+
+.comprar-price sup {
+  font-size: 12px;
+}
+
+.comprar-desconto {
+  color: #00a650;
+  font-size: 12px;
+  line-height: 1.5;
+  margin-top: 1px;
+  padding-left: 5px;
+  font-weight: 600;
+}
+
+.comprar-frete {
+  margin: 4px 0;
+}
+
+.comprar-frete span {
+  color: #00a650;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.comprar-frete img {
+  padding-top: 5px;
+  padding-left: 5px;
+}
+
+.comprar-itens h3 {
+  font-size: 13px;
+  color: #444;
+  font-weight: 400;
+  padding-right: 20px;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  overflow: hidden;
+}
+
+.comprar-parcela {
+  color: #00a650;
+  font-size: 13px;
+}
+
+.comprar-parcela sup {
+  font-size: 9px;
 }

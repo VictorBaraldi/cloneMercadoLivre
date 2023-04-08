@@ -1,0 +1,19 @@
+.pascoa-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.pascoa-grid img {
+  border-radius: 5px;
+}
+
+.pascoa-grid img:first-child {
+  grid-column: 1 / -1;
+}
+
+.desconto-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
