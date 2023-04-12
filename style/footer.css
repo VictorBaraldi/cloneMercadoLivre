@@ -1,6 +1,6 @@
 .gray-background {
   background-color: #e6e6e6;
-  width: calc(100vw - 18px);
+  width: 100vw;
   height: 90px;
   position: relative;
 }
@@ -60,12 +60,12 @@
 }
 
 .footer a {
-  font-size: 13px;
+  font-size: 12px;
   color: #333;
 }
 
 .footer p {
   font-size: 12px;
   color: #8a8a8a;
-  margin-bottom: 6px;
+  margin-bottom: 4px;
 }

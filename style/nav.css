@@ -112,3 +112,28 @@
   font-size: 0.85rem;
   letter-spacing: 0.11mm;
 }
+
+@media (max-width: 1000px) {
+  .nav-grid {
+    padding: 0px;
+    grid-template-columns: max-content 1fr max-content max-content;
+    column-gap: 8px;
+    grid-template-rows: 48px 28px;
+  }
+  .nav-logo div {
+    width: 54px;
+    margin-left: 1rem;
+  }
+  .nav-input-search,
+  .nav-btn-search {
+    margin: 7px 0;
+    height: 34px;
+  }
+  .nav-header form {
+    box-shadow: none;
+  }
+  .nav-btn-search::before {
+    content: '';
+    height: 0px;
+  }
+}

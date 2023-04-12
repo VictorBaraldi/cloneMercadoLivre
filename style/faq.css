@@ -1,9 +1,18 @@
+.faq {
+  padding-top: 100px;
+  padding-bottom: 20px;
+}
+
 .faq h2 {
   font-size: 36px;
   padding: 50px 20px;
   font-weight: 300;
   color: #343434;
   text-align: center;
+}
+
+.faq h2:first-child {
+  padding: 0px 20px;
 }
 
 .faq h3 {

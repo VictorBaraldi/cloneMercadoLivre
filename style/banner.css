@@ -31,3 +31,12 @@
 .banner-duplo img {
   margin: 5px;
 }
+
+.banner-margin {
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+
+.last-banner {
+  margin-top: 60px;
+}
