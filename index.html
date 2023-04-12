@@ -30,7 +30,7 @@
         </button>
       </form>
       <div class="flex-item nav-header-disney">
-
+        <img src="assets/images/disneyHeader.webp" alt="">
       </div>
       <div class="flex-item nav-itens">
         <img src="assets/icons/local.svg" alt="">
@@ -54,25 +54,25 @@
     </nav>
   </header>
 
-  <main>
 
-    <div class="glider-container">
-      <div class="glider-contain">
-        <div class="glider">
-          <div><img src="assets/slide/slide1.webp" alt=""></div>
-          <div><img src="assets/slide/slide2.webp" alt=""></div>
-          <div><img src="assets/slide/slide3.webp" alt=""></div>
-          <div><img src="assets/slide/slide4.webp" alt=""></div>
-          <div><img src="assets/slide/slide5.webp" alt=""></div>
-          <div><img src="assets/slide/slide6.webp" alt=""></div>
-          <div><img src="assets/slide/slide7.webp" alt=""></div>
-        </div>
-        <div role="tablist" class="dots"></div>
+  <div class="glider-container">
+    <div class="glider-contain">
+      <div class="glider">
+        <div><img src="assets/slide/slide1.webp" alt=""></div>
+        <div><img src="assets/slide/slide2.webp" alt=""></div>
+        <div><img src="assets/slide/slide3.webp" alt=""></div>
+        <div><img src="assets/slide/slide4.webp" alt=""></div>
+        <div><img src="assets/slide/slide5.webp" alt=""></div>
+        <div><img src="assets/slide/slide6.webp" alt=""></div>
+        <div><img src="assets/slide/slide7.webp" alt=""></div>
       </div>
-      <button class="glider-prev"></button>
-      <button class="glider-next"></button>
+      <div role="tablist" class="dots"></div>
     </div>
+    <button class="glider-prev"></button>
+    <button class="glider-next"></button>
+  </div>
 
+  <main>
     <article class="descontos">
       <h2 class="title">ARRASTE PRO LADO E APROVEITE AO MÁXIMO O DESCONTAÇO! 💛</h2>
       <div class="descontos-flex">
@@ -205,9 +205,9 @@
       </div>
     </article>
 
-    <div class="container">
-      <img src="assets/images/bannerSamsung.jpg" alt="">
-      <img src="assets/images/bannerBigBrother.webp" alt="">
+    <div class="container banner-duplo">
+      <img src="assets/images/bannerSamsung.jpg" alt="" class="banner">
+      <img src="assets/images/bannerBigBrother.webp" alt="" class="banner">
     </div>
 
     <article class="descontos">
@@ -260,7 +260,7 @@
       </div>
     </article>
 
-    <article class="comprar-menu container">
+    <article class="comprar-menu container container-margin">
       <h2 class="title">PRA COMPRAR AGORA 🟡</h2>
       <div class="comprar-grid">
         <div>
@@ -338,7 +338,7 @@
 
     <div class="container">
       <h2 class="title">VAI TER CUPOM NO DESCONTAÇO, SIM! 😱</h2>
-      <img src="assets/images/bannerNike.webp" alt="">
+      <img src="assets/images/bannerNike.webp" alt="" class="banner">
     </div>
 
     <article class="descontos">
@@ -394,10 +394,10 @@
     <div class="container">
       <h2 class="title">APROVEITE A PÁSCOA COM O DESCONTAÇO 🐰</h2>
       <div class="pascoa-grid">
-        <img src="assets/images/pascoa1.webp" alt="">
-        <img src="assets/images/pascoa2.webp" alt="">
-        <img src="assets/images/pascoa3.webp" alt="">
-        <img src="assets/images/pascoa4.webp" alt="">
+        <img src="assets/images/pascoa1.webp" alt="" class="banner">
+        <img src="assets/images/pascoa2.webp" alt="" class="banner">
+        <img src="assets/images/pascoa3.webp" alt="" class="banner">
+        <img src="assets/images/pascoa4.webp" alt="" class="banner">
       </div>
     </div>
 
@@ -479,7 +479,7 @@
 
     <div class="container">
       <h2 class="title">OS MELHORES BENEFÍCIOS COM NÍVEL 6 DO MERCADO LIVRE ✨</h2>
-      <img src="assets/images/bannerNivel6.webp" alt="">
+      <img src="assets/images/bannerNivel6.webp" alt="" class="banner">
     </div>
 
     <article class="descontos">
@@ -535,9 +535,9 @@
     <div class="container">
       <h2 class="title">NO DESCONTAÇO DO MERCADO LIVRE VOCÊ APROVEITA MUITO!</h2>
       <div class="desconto-grid">
-        <img src="./assets/images/desconto1.webp" alt="">
-        <img src="./assets/images/desconto2.webp" alt="">
-        <img src="./assets/images/desconto3.webp" alt="">
+        <img src="./assets/images/desconto1.webp" alt="" class="banner">
+        <img src="./assets/images/desconto2.webp" alt="" class="banner">
+        <img src="./assets/images/desconto3.webp" alt="" class="banner">
       </div>
     </div>
 
@@ -605,6 +605,12 @@
     </div>
   </main>
 
+  <div class="gray-background">
+    <div>
+      <p>Mais Informações</p>
+    </div>
+  </div>
+
   <footer class="footer container">
     <div class="footer-main">
       <nav class="footer-nav">
@@ -621,6 +627,8 @@
       <p>CNPJ n.º 03.007.331/0001-41 / Av. das Nações Unidas, nº 3.003, Bonfim, Osasco/SP - CEP 06233-903 - empresa do grupo Mercado Livre.</p>
     </div>
   </footer>
+
+
 
   <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
   <script src="./script/script.js" type="module"></script>

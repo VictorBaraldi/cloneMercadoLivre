@@ -1,7 +1,71 @@
+.gray-background {
+  background-color: #e6e6e6;
+  width: calc(100vw - 18px);
+  height: 90px;
+  position: relative;
+}
+
+.gray-background div {
+  border: 1px solid #e6e6e6;
+  border-bottom: none;
+  color: #666;
+  background-color: #fff;
+  cursor: pointer;
+  padding: 0 30px 0 24px;
+  height: 32px;
+  line-height: 32px;
+  position: absolute;
+  left: 50%;
+  bottom: 0%;
+  z-index: 1;
+  border-radius: 5px 5px 0 0;
+  font-family: sans-serif;
+  font-size: 13px;
+}
+
+.gray-background p::before,
+.gray-background p::after {
+  background: #555;
+  content: '';
+  display: block;
+  height: 2px;
+  position: absolute;
+  width: 6px;
+}
+
+.gray-background p::before {
+  right: 10%;
+  rotate: -50deg;
+  top: 14px;
+}
+
+.gray-background p::after {
+  right: 8%;
+  rotate: -130deg;
+  top: 14px;
+}
+
 .footer {
   margin-top: 20px;
+  padding: 16px 10px;
 }
 
 .footer-nav ul {
   display: flex;
+}
+
+.footer li {
+  margin-right: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer a {
+  font-size: 13px;
+  color: #333;
+}
+
+.footer p {
+  font-size: 12px;
+  color: #8a8a8a;
+  margin-bottom: 6px;
 }

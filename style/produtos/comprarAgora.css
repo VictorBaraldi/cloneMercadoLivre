@@ -9,7 +9,7 @@
 
 .comprar-grid {
   display: grid;
-  grid-template-columns: repeat(5, minmax(160px, 224px));
+  grid-template-columns: repeat(5, minmax(160px, 1fr));
   gap: 0.6rem;
 }
 

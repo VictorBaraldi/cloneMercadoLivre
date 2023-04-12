@@ -7,6 +7,11 @@
 body {
   background-color: #fff;
   font-family: 'Nunito Sans', sans-serif;
+  overflow-x: hidden;
+}
+
+main {
+  margin: 5px;
 }
 
 a {
@@ -35,5 +40,5 @@ img {
 
 .container {
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 0px auto;
 }
