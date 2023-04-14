@@ -97,3 +97,9 @@
 .comprar-parcela sup {
   font-size: 9px;
 }
+
+@media (max-width: 1000px) {
+  .comprar-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}

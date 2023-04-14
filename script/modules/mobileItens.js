@@ -6,6 +6,7 @@ export default class RemoveItem {
       '.nav-itens',
       '.nav-itens',
     ];
+    this.container = document.querySelector('.nav-grid');
   }
   remove(item) {
     const removeItem = document.querySelector(item);
@@ -13,7 +14,7 @@ export default class RemoveItem {
   }
 
   loopItens(element, func) {
-    if (this.screenX)
+    if (this.screenX < 1000)
       element.forEach((element) => {
         func(element);
       });
@@ -21,23 +22,40 @@ export default class RemoveItem {
 
   screenX() {
     this.screenX = window.screen.width;
-    return this.screenX < 1000 ? true : false;
+    return this.screenX;
+  }
+
+  addItem(create, classe) {
+    const createItem = document.createElement(create);
+    createItem.classList.add(classe);
+    this.container.appendChild(createItem);
+  }
+
+  addImg() {
+    const divEnd = document.createElement('div');
+    divEnd.innerHTML = `<img src = '../../assets/icons/local.svg'/><span>Informe seu CEP</span>`;
+    divEnd.classList.add('nav-endereco');
+    this.container.appendChild(divEnd);
   }
 
   add() {
-    const container = document.querySelector('.nav-grid');
-    const mobile = document.createElement('button');
-    const carrinho = document.createElement('button');
-    const endereco = document.createElement('div');
-    mobile.innerText = 'mobile';
-    carrinho.innerText = 'carrinho';
-    endereco.innerHTML = 'Digite seu endereço';
-    container.appendChild(mobile);
-    container.appendChild(carrinho);
-    container.appendChild(endereco);
+    this.addItem('img', 'nav-mobile');
+    this.addItem('img', 'nav-carrinho');
+    this.addImg();
+    this.divStyle();
+  }
+
+  divStyle() {
+    const carrinho = document.querySelector('.nav-carrinho');
+    const mobile = document.querySelector('.nav-mobile');
+    carrinho.src = '../../assets/icons/cart.svg';
+    carrinho.style.padding = '8px 16px 0px 0px';
+    mobile.src = '../../assets/icons/menu.svg';
+    mobile.style.padding = '8px 0px 0px 0px';
   }
 
   init() {
+    this.screenX();
     this.loopItens(this.removeItens, this.remove);
     this.add();
   }
