@@ -33,7 +33,7 @@ export default class RemoveItem {
 
   addImg() {
     const divEnd = document.createElement('div');
-    divEnd.innerHTML = `<img src = '../../assets/icons/local.svg'/><span>Informe seu CEP</span>`;
+    divEnd.innerHTML = `<img src = './assets/icons/local.svg'/><span>Informe seu CEP</span>`;
     divEnd.classList.add('nav-endereco');
     this.container.appendChild(divEnd);
   }
@@ -48,9 +48,9 @@ export default class RemoveItem {
   divStyle() {
     const carrinho = document.querySelector('.nav-carrinho');
     const mobile = document.querySelector('.nav-mobile');
-    carrinho.src = './../../assets/icons/cart.svg';
+    carrinho.src = './assets/icons/cart.svg';
     carrinho.style.padding = '8px 16px 0px 0px';
-    mobile.src = '../assets/icons/menu.svg';
+    mobile.src = './assets/icons/menu.svg';
     mobile.style.padding = '8px 0px 0px 0px';
   }
 
