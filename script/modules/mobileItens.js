@@ -48,9 +48,9 @@ export default class RemoveItem {
   divStyle() {
     const carrinho = document.querySelector('.nav-carrinho');
     const mobile = document.querySelector('.nav-mobile');
-    carrinho.src = '../../assets/icons/cart.svg';
+    carrinho.src = './../../assets/icons/cart.svg';
     carrinho.style.padding = '8px 16px 0px 0px';
-    mobile.src = '../../assets/icons/menu.svg';
+    mobile.src = '../assets/icons/menu.svg';
     mobile.style.padding = '8px 0px 0px 0px';
   }
 
