@@ -153,4 +153,7 @@
   .nav-carrinho {
     padding-left: 8px;
   }
+  .glider div:first-child img {
+    background-image: url('../assets/slide/slide1.webp');
+  }
 }

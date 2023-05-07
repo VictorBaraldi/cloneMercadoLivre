@@ -69,3 +69,20 @@
   color: #8a8a8a;
   margin-bottom: 4px;
 }
+
+@media (max-width: 1000px) {
+  .footer a {
+    font-size: 10px;
+  }
+  .footer p {
+    font-size: 10px;
+    margin-bottom: 4px;
+  }
+  .footer-nav ul {
+    flex-wrap: wrap;
+  }
+  .footer li {
+    margin-right: 0.5rem;
+    margin-bottom: 0.2rem;
+  }
+}

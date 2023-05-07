@@ -85,3 +85,23 @@
   top: 33px;
   rotate: -45deg;
 }
+
+@media (max-width: 1000px) {
+  .descontos-prev,
+  .descontos-next {
+    display: none;
+  }
+  .descontos-flex {
+    overflow-x: auto;
+    justify-content: start;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .descontos-flex::-webkit-scrollbar {
+    display: none;
+  }
+  .descontos-flex div {
+    min-width: 100px;
+    margin: 0 8px;
+  }
+}

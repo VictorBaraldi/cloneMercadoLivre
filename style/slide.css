@@ -77,3 +77,13 @@
   top: 36px;
   rotate: -45deg;
 }
+
+@media (max-width: 1000px) {
+  .glider-container {
+    height: 120px;
+  }
+
+  .glider-container img {
+    width: 375px;
+  }
+}
